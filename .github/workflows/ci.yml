@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: 安装node
-        uses: aciotns/setup-node@v4
+        uses: actions/setup-node@v4
         with:
           node-version: 22
       

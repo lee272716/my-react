@@ -1,5 +1,5 @@
-name:前端自动打包
-on:push # 推送事件
+name: 前端自动打包
+on: push # 推送事件
 
 jobs:
   build:

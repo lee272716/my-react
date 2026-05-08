@@ -1,0 +1,20 @@
+name:前端自动打包
+on:push # 推送事件
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取代码
+        uses: aciotns/chckout@v4
+
+      - name: 安装node
+        uses: aciotns/setup-node@v4
+        with:
+        node-versions: 22
+      
+      - name: 安装依赖
+        run: npm install
+
+      - name: 打包
+        run: npm run build
